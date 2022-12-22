@@ -1,0 +1,11 @@
+n=int(input("enter value="))
+k=n-2
+hallow=1+(k*2)+2
+for i in range(0,n-1):
+    hallow=abs(hallow-2)
+    print(str(' '*i)+str(i+1)+str(' '*hallow)+ str(i+1)+str(' '*i))
+print(str(' '*(n-1))+str(n)+str(' '*(n-1)))
+rhallow=1
+for j in range(n-1,0,-1):
+    print(str(' '*(j-1))+str(j)+str(' '*rhallow)+str(j)+str(' '*(j-1)))
+    rhallow=rhallow+2
